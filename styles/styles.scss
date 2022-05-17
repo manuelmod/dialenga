@@ -1,0 +1,282 @@
+// Variables
+$primary-color: #092e38;
+$black-45: #8c8c8c;
+$black-1: #f6f8f9;
+$black-2: #f5f5f5;
+$secondary10: #e1e6e7;
+$link: #666666;
+$black-30: #b3b3b3;
+$black-15: #d9d9d9;
+$black-85: #262626;
+$gray-10: #e6e6e6;
+$font-family-primary: "Montserrat", sans-serif;
+%link-style {
+  font-family: $font-family-primary;
+  color: $link;
+  font-size: 13px;
+}
+
+// h1, h2, h3, h4
+h1 {
+  color: $black-85;
+  font-size: 26px !important;
+  margin: 0 !important;
+}
+
+h2 {
+  color: $black-85;
+  font-size: 20px !important;
+}
+
+h3 {
+  color: $black-85;
+  font-size: 18px !important;
+}
+
+h4 {
+  color: $black-45;
+  font-size: 16px !important;
+}
+
+// Reset
+a {
+  text-decoration: none !important;
+  color: initial !important;
+}
+
+* {
+  font-family: $font-family-primary;
+}
+
+// Main
+.header {
+  // Main header
+  padding: 1rem;
+  border-bottom: 1px solid $secondary10;
+  height: 62px;
+
+  // Layer Left header
+  &-left {
+    a {
+      background: url(../images/logo-dialenga.svg) center center;
+      height: 30px;
+      width: 105px;
+      background-repeat: no-repeat;
+      display: block;
+    }
+  }
+
+  // Layer Right header
+  &-right {
+    > * {
+      margin-left: 20px;
+    }
+    .header-right__user-logged {
+      a {
+        background: url(../images/profile-picture.png) center center;
+        height: 32px;
+        width: 32px;
+        background-repeat: no-repeat;
+        display: block;
+        border-radius: 100%;
+      }
+      span {
+        @extend %link-style;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.page-wrap {
+  height: 100vh;
+  nav {
+    background-color: $black-1;
+    width: 250px;
+    .menu-item {
+      margin: 30px;
+      a {
+        color: $black-45 !important;
+        font-size: 12px;
+        span {
+          margin-right: 10px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .container-wrap {
+    margin: 40px 60px;
+    flex: 1;
+    &-header {
+      min-width: 1200px;
+      margin-bottom: 24px;
+      &__left {
+        flex: 1;
+      }
+      &__right {
+        flex: 1;
+      }
+    }
+
+    &-card {
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.14);
+      padding: 24px 32px;
+      background: #ffffff;
+      border-radius: 3px;
+      margin-bottom: 40px;
+
+      &__signer {
+        flex: 4;
+        .signer-picture {
+          a {
+            background: url(../images/signer-picture.png) center center;
+            height: 32px;
+            width: 32px;
+            background-repeat: no-repeat;
+            display: block;
+            border-radius: 100%;
+          }
+          &-info {
+            margin-left: 15px;
+            span {
+              display: block;
+            }
+            &__name {
+              color: $black-85;
+            }
+            &__email {
+              color: $link;
+            }
+          }
+        }
+      }
+      &__progress {
+        flex: 3;
+        .progress-b {
+          span {
+            &.p-bar-1 {
+              width: 130px;
+              height: 12px;
+              background: #e6e6e6;
+              border-radius: 15px;
+              margin-right: 20px;
+              position: relative;
+              .p-bar-2 {
+                background: #000000;
+                height: 12px;
+                width: 50%;
+                border: 1px solid;
+                position: absolute;
+                border-radius: 9px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-documents {
+      h3 {
+        margin-bottom: 20px;
+      }
+      &__list {
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          th,
+          td {
+            padding: 12px 20px;
+          }
+          tbody tr {
+            border: 1px solid $black-2;
+            span {
+              &.file-name {
+                cursor: pointer;
+              }
+              &.file-icon {
+                padding: 4px;
+                border-radius: 4px;
+                margin-right: 10px;
+                font-size: 24px;
+                vertical-align: middle;
+                &::before {
+                  color: #fff;
+                }
+                &.type-a {
+                  background: linear-gradient(87deg, #5fd0d0, #84dbdb 100%);
+                }
+                &.type-b {
+                  background: linear-gradient(87deg, #b586d9, #c29be0 100%);
+                }
+                &.type-c {
+                  background: linear-gradient(87deg, #e474a9, #e888b7 100%);
+                }
+                &.type-d {
+                  background: linear-gradient(87deg, #6cb6d6, #84c2e1 100%);
+                }
+              }
+              &.tag-signed {
+                background-color: #51ec98;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: 700;
+                padding: 5px;
+                border-radius: 3px;
+                font-size: 12px;
+                letter-spacing: 1px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-header {
+      &__button {
+        border: 1px solid #b3b3b3;
+        border-radius: 100%;
+        padding: 6px;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  aside {
+    &.aside {
+      border-left: 1px solid $black-15;
+      padding: 35px 45px;
+      width: 300px;
+    }
+
+    &.details {
+      position: absolute;
+      top: 62px;
+      right: 0;
+      height: 100%;
+      background: #fff;
+      display: none;
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.14);
+      padding: 35px 45px;
+      width: 300px;
+
+      .details-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        span {
+          &.icon-back {
+            cursor: pointer;
+          }
+        }
+        h2 {
+          margin-left: 10px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+// Functions

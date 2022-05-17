@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="fonts/dialenga/style.css" />
+    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Dialenga - Shipment Detail</title>
+  </head>
+
+  <body>
+
+    <!-- Header -->
+    <header class="header d-flex justify-content-between">
+
+      <!-- Logo left -->
+      <div class="header-left">
+        <a href="#" class="d-flex align-items-center"></a>
+      </div>
+
+      <!-- User settings (right)-->
+      <div class="header-right d-flex align-items-center">
+        <div class="header-right__header-activity">
+          <span class="icon-header-activity"></span>
+        </div>
+        <div class="header-right__user-logged d-flex align-items-center">
+          <a href="#" class="d-flex align-items-center"></a>
+          <span>Virginia Ramos del Río</span>
+          <span class="icon-user-dropdown"></span>
+        </div>
+      </div>
+    </header>
+    <!-- End of Header -->
+
+    <!-- Main content -->
+    <div class="page-wrap d-flex">
+
+      <!-- Sidebar menu -->
+      <nav>
+        <div class="menu-item">
+          <a href="#" class="d-flex align-items-center">
+            <span class="icon-menu-dashboard"></span>
+            INICIO
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="#" class="d-flex align-items-center">
+            <span class="icon-message"></span>
+            MENSAJES
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="#" class="d-flex align-items-center">
+            <span class="icon-menu-dialogs"></span>
+            CUESTIONARIOS
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="#" class="d-flex align-items-center">
+            <span class="icon-knowledge"></span>
+            CENTRO DE CONOCIMIENTO
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="#" class="d-flex align-items-center">
+            <span class="icon-conversation"></span>
+            CONVERSACIONES
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="#" class="d-flex align-items-center">
+            <span class="icon-payroll"></span>
+            NÓMINAS Y DOCUMENTOS
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="#" class="d-flex align-items-center">
+            <span class="icon-menu-dialogs"></span>
+            FIRMA REMOTA
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="#" class="d-flex align-items-center">
+            <span class="icon-menu-vacations"></span>
+            TIEMPO LIBRE
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="#" class="d-flex align-items-center">
+            <span class="icon-users_group"></span>
+            USUARIOS
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="#" class="d-flex align-items-center">
+            <span class="icon-statistics"></span>
+            ESTADÍSTICAS
+          </a>
+        </div>
+      </nav>
+      <!-- End of Sidebar menu -->
+
+      <div class="container-wrap">
+        <div class="container-wrap-header d-flex align-items-center">
+          <div class="container-wrap-header__left d-flex align-items-center">
+            <a href="#" class="container-wrap-header__button"><span class="icon-back"></span></a>
+            <h1>Detalle envío</h1>
+          </div>
+          <div class="container-wrap-header__right d-flex align-items-center justify-content-end">
+            <a href="#" class="container-wrap-header__button"><span class="icon-notifications"></span></a>
+            <a href="#" class="container-wrap-header__button"><span class="icon-delete"></span></a>
+          </div>
+        </div>
+
+        <div class="container-wrap-card d-flex">
+          <div class="container-wrap-card__signer">
+            <h4>Firmante</h4>
+            <div class="signer-picture d-flex align-items-center">
+              <a href="#" class="d-flex align-items-center"></a>
+              <div class="signer-picture-info">
+                <span class="signer-picture-info__name">Josefa Blanco Holgado</span>
+                <span class="signer-picture-info__email">josefa.blanco@company.com</h3>
+              </div>
+            </div>
+          </div>
+          <div class="container-wrap-card__progress">
+            <h4>Progreso</h4>
+            <div class="progress-b d-flex align-items-center">
+              <span class="p-bar-1"><span class="p-bar-2"></span></span>
+              <span class="p-info">2 de 4</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-wrap-documents">
+          <h3>Documentos incluidos en el envío</h3>
+          <div class="container-wrap-documents__list">
+            <table>
+              <thead>
+                <tr>
+                  <th><h4>Documento</h4></th>
+                  <th><h4>Estado</h4></th>
+                </tr>
+              </thead>
+              <tbody>
+                <span class=""></span>
+                <tr>
+                  <td>
+                    <span class="file-icon type-a icon-menu-dialogs"></span>
+                    <span class="file-name" onclick="viewDetails(); return false">Contrato_Josefa_Blanco_Holgado.pdf</span></td>
+                  <td>
+                    <span class="tag-signed">Firmado</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="file-icon type-b icon-menu-dialogs"></span>
+                    <span class="file-name" onclick="viewDetails(); return false">Acuerdo_de_Confidencialidad_Josefa_Blanco_Holgado.pdf</span>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="file-icon type-c icon-menu-dialogs"></span>
+                    <span class="file-name" onclick="viewDetails(); return false">RGPD_Josefa_Blanco_Holgado.pdf</span>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="file-icon type-d icon-menu-dialogs"></span>
+                    <span class="file-name" onclick="viewDetails(); return false">Anexo_I_Josefa_Blanco_Holgado.pdf</span>
+                  </td>
+                  <td>
+                    <span class="tag-signed">Firmado</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      <aside class="aside">
+        <h2>Resumen</h2>
+        <p>Contenido</p>
+      </aside>
+
+      <aside id="details" class="details">
+        <div class="details-header">
+          <span onclick="hideDetails(); return false" class="icon-back"></span>
+          <h2>Actividad</h2>
+        </div>
+        <div class="details-header">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non mauris risus. Curabitur porttitor magna at aliquet feugiat. Nam varius gravida ligula eu gravida.</p>
+        </div>
+      </aside>
+    
+
+    </div>
+    <!-- End of Main content -->
+
+    <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+      function viewDetails() {
+        document.getElementById("details").style.display = "block";
+      }
+
+      function hideDetails() {
+        document.getElementById("details").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
